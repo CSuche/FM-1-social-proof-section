@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'spartan', sans-serif;
+    Font-size: 15px;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    position: relative;
+    background: url(/social-proof-section-master/images/bg-pattern-top-mobile.svg) top left no-repeat, url(/social-proof-section-master/images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+    /* hide scrollbar 
+    https://stackoverflow.com/questions/4405954/how-do-i-remove-the-horizontal-scrollbar-in-a-div */
+    /* background-size: cover, cover; */
+    width: 100%, 100%; ??
+    overflow-x: hidden;
+}
+
+
+
+#introduction h1{
+    margin: 80px 50px 30px 50px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 0.95;
+    color: hsl(300, 43%, 22%);
+}
+
+#introduction p{
+    margin: 0 20px 40px 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#rates{
+    margin-bottom: 45px;
+}
+
+.rate{
+    background-color: hsl(300, 24%, 96%);
+    margin: 0 20px 15px 20px;
+    border-radius: 10px;
+}
+
+#stars{
+    text-align: center;
+}
+
+.star{
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.rate p{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: small;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.reviews{
+    /* margin-top: 30px; */
+}
+
+.review{
+    background-color: hsl(300, 43%, 22%);
+    margin: 20px;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.title{
+    display: flex;
+}
+
+.profilPicture{
+    border-radius: 50%;
+    height: 45px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.who{
+    margin: 30px;
+}
+
+.who h2{
+    color: hsl(300, 24%, 96%);
+    font-size: small;
+    line-height: 2.2;
+}
+
+.who h3{
+    color: hsl(333, 80%, 67%);
+    font-size: small;
+    font-weight: 400;
+}
+
+.review p{
+    color: hsl(0, 0%, 100%);
+    font-size: small;
+    line-height: 1.8;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 500px){
+
+    #rates {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .rate{
+        width: 500px;
+    }
+    
+    .rates:nth-child(2){
+        align-items: center;
+    }
+    
+    .rates:nth-child(3){
+        align-items: flex-end;
+    }
+    
+    #reviews{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    
+    .review{
+        width: 500px;
+    }
+    
+}
