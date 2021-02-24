@@ -185,12 +185,16 @@ body{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     
+    #introduction{
+        flex-shrink: 2;
+    }
     #rates{
         display: flex;
         flex-direction: column;
-        /* flex-shrink: 0; */
+        flex-shrink: 1;
     }
     
     .rate{
