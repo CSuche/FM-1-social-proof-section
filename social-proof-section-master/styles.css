@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'spartan', sans-serif;
+    Font-size: 15px;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    /* position: relative; */
+    background: url(/social-proof-section-master/images/bg-pattern-top-mobile.svg) top left no-repeat, url(/social-proof-section-master/images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+    background-attachment: fixed;
+    /* hide scrollbar 
+    https://stackoverflow.com/questions/4405954/how-do-i-remove-the-horizontal-scrollbar-in-a-div */
+    /* background-size: cover, cover; */
+    overflow-x: hidden;
+}
+
+
+
+#introduction h1{
+    width: 275px;
+    margin: 80px auto 30px;
+    /* margin: 80px 50px 30px 50px; */
+    font-size: xx-large;
+    text-align: center;
+    line-height: 0.95;
+    color: hsl(300, 43%, 22%);
+}
+
+#introduction p{
+    width: 340px;
+    margin: 0 auto 40px;
+    /* margin: 0 20px 40px 20px; */
+    text-align: center;
+    line-height: 1.5;
+}
+
+#rates{
+    margin-bottom: 45px;
+    background-color: rgb(188, 226, 153);
+}
+
+.rate{
+    background-color: hsl(300, 24%, 96%);
+    width: 335px;
+    margin: 0 auto 15px;
+    /* margin: 0 20px 15px 20px; */
+    border-radius: 10px;
+}
+
+#stars{
+    text-align: center;
+}
+
+.star{
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.rate p{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: small;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+#reviews{
+    background-color: rgb(143, 173, 61);
+}
+
+.review{
+    background-color: hsl(300, 43%, 22%);
+    width: 335px;
+    margin: 22px;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.title{
+    display: flex;
+}
+
+.profilPicture{
+    border-radius: 50%;
+    height: 45px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.who{
+    margin: 30px;
+}
+
+.who h2{
+    color: hsl(300, 24%, 96%);
+    font-size: small;
+    line-height: 2.2;
+}
+
+.who h3{
+    color: hsl(333, 80%, 67%);
+    font-size: small;
+    font-weight: 400;
+}
+
+.review p{
+    color: hsl(0, 0%, 100%);
+    font-size: small;
+    line-height: 1.8;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 500px){
+
+    body{
+        background: url(/social-proof-section-master/images/bg-pattern-top-desktop.svg) top left no-repeat, url(/social-proof-section-master/images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+        background-attachment: fixed;
+    }
+    
+    #introduction h1{
+        width: 50vw;
+        margin: 80px auto 30px;
+    }
+
+    #introduction p{
+        width: 40vw;
+        margin: 0 auto 40px;
+    }
+
+    #rates, #reviews{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rate, .review{
+        width: 60vw;
+    }
+}
+
+@media (min-width: 768px){
+        /* not working, start at 615px instead  */
+
+
+    #rates {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    
+    .rate{
+        width: 450px;
+        margin: 0 20% 15px 20%;
+    }
+
+    .rate:nth-child(2){
+        align-self: center;
+    }
+    
+    .rate:nth-child(3){
+        align-self: flex-end;
+    }
+
+    #reviews{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 975px){
+    /* not working, start at 780px instead  */
+    #top{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #rates{
+        display: flex;
+        flex-direction: column;
+        /* flex-shrink: 0; */
+    }
+    
+    .rate{
+        width: 450px;
+    }
+
+    #reviews{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* not working */
+    }
+    
+    .review:nth-child(2){
+        align-self: center;
+        /* not working */
+    }
+    
+    .review:nth-child(3){
+        align-self: flex-end;
+        /* not working */
+    }
+
+}
